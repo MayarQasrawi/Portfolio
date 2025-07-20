@@ -1,0 +1,418 @@
+:root {
+  --color-dark: #1E1E1E;
+  --color-primary: #00ADB5;
+  --color-primary-dark:#00848a;
+  --color-light: #EEEEEE;
+  --color-secondary-dark: #393E46; /* اللون الجديد */
+  --color-secondary-dark-transparent: rgba(57, 62, 70, 0.75); /* مع الشفافية */
+   --color-gray-dark: rgba(30, 30, 30, 0.3); 
+  --color-gray-dark-transparent:  rgba(57, 62, 70, 0.1);/* مع الشفافية */
+--color-gray-hover: #999999;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  background-color: var(--color-light);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 16px;
+  border-bottom: 1px solid var(--color-secondary-dark-transparent);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--color-light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-content a:hover {
+  color: var(--color-primary);
+}
+
+.nav-content {
+  display: flex;
+  gap: 16px;
+}
+
+.last {
+  color: var(--color-primary);
+}
+
+.logo, .last {
+  font-size: 24px;
+  font-weight: bold;
+}
+.contaner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.hero-content {
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  column-gap: 8px;
+
+}
+
+.highlight {
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: 50px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 30px;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.hero-content section {
+  display: flex;
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.btn.secondary {
+  background-color: var(--color-secondary-dark-transparent);
+  color: white;
+    display: inline-flex;
+gap: 8px; 
+align-items: center;
+}
+
+.btn.secondary:hover {
+  background-color: var(--color-secondary-dark); 
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  align-items: center;
+  gap: 60px;
+  max-width: 1300px; 
+  margin: 0 auto; 
+  padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr; 
+    text-align: center;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .contaner {
+  margin: 40px 30px;
+  }
+  .btn{
+    padding: 2px;
+    font-size: 10px;
+  }
+}
+
+mark{
+  background-color: var(--color-primary);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.section-text {
+  margin-top: 24px;
+  line-height: 2.4; 
+  text-align: justify; 
+  font-size: 16px; 
+  max-width: 800px;
+ 
+}
+
+/* 
+IMPORTANT: Grid Layout Best Practice
+- Don't use position: relative with top/left on direct Grid children
+- This breaks the Grid flow and causes elements to stack/overlap
+- Use margin, padding, or transform for positioning instead
+- Keep position: relative only on containers, not on Grid items themselves
+*/ 
+
+.about-img { 
+  width: 70%; 
+  height: auto; 
+  z-index: 10; 
+  object-fit: cover;
+  /* position: relative; */
+  /* top: 90px; */
+  /* left: 20px; */
+  margin-top: 90px;
+  margin-left: 20px;
+} 
+
+.about-img-container {
+  position: relative;
+
+}
+
+.about-bg { 
+  width: 100%; 
+  height: auto;
+  object-fit: cover;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: -1; 
+}
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+ 
+  
+}
+
+/* contact */
+
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  max-width: 1300px;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 25px;
+  }
+}
+.contact-img  {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+.contact .title {
+  text-align: left;
+  text-transform: capitalize;
+
+}
+
+/* Form Styles */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 0px ;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--color-gray-dark-transparent);
+  color: var(--color-gray-dark);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid var(--color-gray-dark);
+}
+
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 12px;
+}
+.contact-form button {
+  align-self: flex-start;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 16px;
+}
+
+.user-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 100%;
+    text-align: left;
+  }
+
+  .user-info {
+    grid-template-columns: 1fr; 
+  }
+
+  .contact-form button {
+    align-self: center;
+  }
+}
+
+footer {
+  margin-top: 32px;
+  background-color: var(--color-secondary-dark);
+  color: white;
+  padding: 48px 48px;
+  text-align: center;
+}
+
+footer ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  color: white;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+footer ul li a {
+  color: white;
+}
+
+
+
+.social-icons li a {
+border-radius: 50%;
+background-color: var(--color-gray-dark-transparent);
+transition: background-color 0.3s;
+}
+
+
+.social-icons li a:hover {
+  background-color: var(--color-gray-hover);
+}
+
+
+.btn svg, .quick-links li a svg {
+  margin-left: 8px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+
+.btn:hover svg  {
+  transform: scale(1.1);
+}
+
+
+.quick-links li a {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.quick-links li a:hover {
+  border-radius: 4px;
+  background-color: #999999;
+  color: white;
+  
+}
+
+.border-btn:hover {
+  background-color: var(--color-dark);
+  color: white;
+}
+
+
+
+.project-figure {
+  position: relative;
+}
+
+
+.project-figure .badge {
+  position: absolute;
+  top: 40px;
+  left: -60px;
+  background-color: #f39c12; /* لون برتقالي مثلاً */
+  color: white;
+  padding: 5px 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 12px;
+  transform: rotate(-40deg);
+  text-align: left;
+font-weight: bolder;
+}
