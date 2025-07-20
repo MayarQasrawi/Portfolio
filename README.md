@@ -23,7 +23,7 @@ It highlights your **projects**, **skills**, and includes a **contact section** 
 
 ---
 
-## ✏️ Design (Optional Step)
+## ✏️ Design 
 
 I used the [Figma Crash Course](https://www.youtube.com/watch?v=FTFaQWZBqQ8) to create a basic wireframe design before starting development.  
 You can view my Figma wireframe design [here](https://www.figma.com/design/1ex2veDRFdhYpiAv30cFA9/Mayar-Qasarwa-Portfolio?node-id=0-1&p=f&t=mYjf2Hf0bqhgyMzq-0).
