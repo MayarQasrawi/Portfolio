@@ -416,3 +416,64 @@ transition: background-color 0.3s;
   text-align: left;
 font-weight: bolder;
 }
+
+/* Skills Section */
+
+ 
+
+ .skills{
+    
+            flex-direction: column;
+          
+        }
+
+        .skills-strip {
+          margin-top: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-icon:hover {
+            transform: scale(1.1);
+        }
+
+
+           @media (max-width: 768px) {
+     
+
+            .skill-icon {
+                width: 45px;
+                height: 45px;
+            }
+
+            .skills-strip {
+                gap: 15px;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skill-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .skills-strip {
+                gap: 12px;
+                padding: 15px;
+            }
+        }
+
+
