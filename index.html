@@ -13,13 +13,12 @@
     />
     <meta name="author" content="Mayar Qasarwa" />
     <title>Mayar Qasarwa| Portfolio</title>
-
+    <!-- Icons and Fonts -->
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>"
       type="image/svg+xml"
     />
-
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,6 +27,7 @@
       rel="stylesheet"
     />
 
+    <!-- CSS Stylesheet -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -41,16 +41,24 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#" class="logo">Mayar<span class="last">Qasarwa</span></a>
-        <div class="nav-content">
-          <a href="#">Home</a>
-          <a href="#About">About Me</a>
-          <a href="#contact">contact</a>
-        </div>
-      </nav>
-    </header>
+   <header>
+  <nav>
+    <a href="#" class="logo">Mayar<span class="last">Qasarwa</span></a>
+    
+    <!-- Hamburger Menu Button -->
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <div class="nav-content">
+      <a href="#" onclick="closeMenu()">Home</a>
+      <a href="#About" onclick="closeMenu()">About Me</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+  </nav>
+</header>
 
     <section class="hero">
       <div class="hero-content contaner">
@@ -143,43 +151,10 @@
         <figure class="project-figure">
             <div class="badge">Graduation Project! 🎓 </div>
 
-          <!-- صورة رئيسية للمشروع -->
+          
 
-          <!-- صور التكنولوجيا المستخدمة -->
-          <!-- <div class="tech-icons">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="Tailwind CSS" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
-      
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original-wordmark.svg" />
           
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" />
           
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-plain-wordmark.svg" />
-           
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-plain-wordmark.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original-wordmark.svg" />
-          
-    </div> -->
 
           <img src="./images//ui-design-90.png" alt="Ratify Platform UI" />
         </figure>
@@ -203,13 +178,9 @@
 
       <article class="project-card">
         <figure>
-          <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-line-wordmark.svg" />
-                   
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
-            
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original-wordmark.svg" /> -->
+          
 
-          <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original-wordmark.svg" /> -->
+          
 
           <img src="./images/artificial-intelligence-1-51.png" alt="Python and TensorFlow" />
         </figure>
@@ -234,7 +205,7 @@
 
       <article class="project-card">
         <figure>
-          <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain-wordmark.svg" /> -->
+          
           <img
             src="./images//coding-29 (2).png"
             alt="Java and Design Patterns"
@@ -262,12 +233,9 @@
 
       <article class="project-card">
         <figure>
-          <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original-wordmark.svg" />
-            
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original-wordmark.svg" /> -->
+          
 
-          <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />      
-                  -->
+          
 
           <img
             src="./images/data-visualization-61.png"
@@ -450,5 +418,37 @@
 
       <p class="copyright">&copy; 2025 Mayar Qasarwa. All rights reserved.</p>
     </footer>
+
+    <script>
+function toggleMenu() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navContent = document.querySelector('.nav-content');
+  
+  menuToggle.classList.toggle('active');
+  navContent.classList.toggle('active');
+}
+
+function closeMenu() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navContent = document.querySelector('.nav-content');
+  menuToggle.classList.remove('active');
+  navContent.classList.remove('active');
+}
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth > 768) {
+    closeMenu();
+  }
+});
+
+document.addEventListener('click', function(event) {
+  const nav = document.querySelector('nav');
+  
+  if (!nav.contains(event.target)) {
+    closeMenu();
+  }
+});
+
+</script>
   </body>
 </html>

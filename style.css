@@ -25,6 +25,9 @@ body {
   background-color: var(--color-light);
 }
 
+
+
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -93,6 +96,20 @@ a {
   text-transform: uppercase;
   letter-spacing: 4px;
   text-align: center;
+}
+.title {
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .hero-text {
@@ -481,5 +498,104 @@ font-weight: bolder;
                 padding: 15px;
             }
         }
+
+/* Navigation Styles - محدث للـ responsive */
+
+
+
+
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-dark);
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Hamburger Animation */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  nav {
+    padding: 12px 20px;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-light);
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border-top: 1px solid var(--color-secondary-dark-transparent);
+  }
+
+  .nav-content.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-content a {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .nav-content a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-content a:hover {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 8px;
+    margin: 0 10px;
+  }
+
+  .logo, .last {
+    font-size: 20px;
+  }
+}
 
 
