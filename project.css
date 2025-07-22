@@ -15,6 +15,7 @@
   margin-bottom: 60px;
   
 }
+
 .project-card:nth-child(odd) {
      grid-template-rows: row-reverse;
 }
@@ -45,7 +46,8 @@
 @media (max-width: 768px) {
    .project-card {
        grid-template-columns: 1fr;
-       ;
+          min-height: 200px;
+          padding-bottom: 4px;
 
    }
 
@@ -57,10 +59,8 @@
   order: 2;
 }
 
-.project-card{
-          min-height: 380px;
 
-}
+
 }
 
 .project-card figure{
@@ -108,7 +108,7 @@
 .project-description{
      font-size: 16px;
      margin-bottom: 16px;
-     text-align: justify;
+     text-align: justify-left;
      color: var(--color-gray-hover) ;
 }
 
@@ -132,58 +132,7 @@
      font-size: 16px;;   
 }
 
-/* new */
-/* .tech-skills {
-  padding: 2.5rem 1rem;
-  max-width: 900px;
-  margin: 0 auto 4rem;
-  text-align: center;
-}
 
-.tech-skills .title {
-  font-size: 2.4rem;
-  margin-bottom: 2rem;
-  font-weight: 700;
-}
-
-.tech-categories {
-  display: flex;
-  justify-content: space-around;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.tech-category {
-  flex: 1 1 280px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgb(0 0 0 / 0.1);
-  padding: 1.5rem 1rem 2rem;
-}
-
-.tech-category h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1.2rem;
-  color: #1f2937; /* رمادي داكن */
-}
-
-.tech-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.2rem;
-}
-
-.tech-icons img {
-  width: 48px;
-  height: 48px;
-  cursor: default;
-  transition: transform 0.3s ease;
-}
-
-.tech-icons img:hover {
-  transform: scale(1.2);
-} */
 
 
 

@@ -225,6 +225,12 @@ IMPORTANT: Grid Layout Best Practice
   .btn {
     padding: 10px 20px;
     font-size: 14px;
+
+  }
+
+  .hero section{
+    flex-direction: column-reverse;
+    align-items: center;
   }
  
   
