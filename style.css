@@ -3,11 +3,11 @@
   --color-primary: #00ADB5;
   --color-primary-dark:#00848a;
   --color-light: #EEEEEE;
-  --color-secondary-dark: #393E46; /* اللون الجديد */
-  --color-secondary-dark-transparent: rgba(57, 62, 70, 0.75); /* مع الشفافية */
+  --color-secondary-dark: #393E46; 
+  --color-secondary-dark-transparent: rgba(57, 62, 70, 0.75); 
    --color-gray-dark: rgba(30, 30, 30, 0.3); 
-  --color-gray-dark-transparent:  rgba(57, 62, 70, 0.1);/* مع الشفافية */
---color-gray-hover: #999999;
+  --color-gray-dark-transparent:  rgba(57, 62, 70, 0.1);
+  --color-gray-hover: #999999;
 }
 
 
