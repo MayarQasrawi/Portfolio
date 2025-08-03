@@ -53,18 +53,19 @@
     </button>
     
     <div class="nav-content">
-      <a href="#" onclick="closeMenu()">Home</a>
-      <a href="#About" onclick="closeMenu()">About Me</a>
-      <a href="#contact" onclick="closeMenu()">Contact</a>
-    </div>
+  <a href="#home" onclick="closeMenu();">Home</a>
+  <a href="#About" onclick="closeMenu();">About Me</a>
+  <a href="#projects" onclick="closeMenu();">Projects</a>
+  <a href="#contact" onclick="closeMenu();">Contact</a>
+</div>
   </nav>
 </header>
 
-    <section class="hero">
+<section class="hero" id="home">
       <div class="hero-content contaner">
         <p class="hero-text">Hi, I'm</p>
-        <h1 class="title">Mayar <span class="highlight">Qasarwa</span></h1>
-        <p class="hero-text">
+        <h1 class="title typing">Mayar <span class="highlight">Qasarwa</span></h1>
+        <p class="hero-text ">
           And I'm a <span class="highlight">Frontend Developer</span>
         </p>
 
@@ -82,8 +83,8 @@
         </section>
       </div>
     </section>
-
-    <section class="about contaner" id="About">
+<div id="About">
+    <section class="about contaner" >
       <figure>
         <div class="about-img-container">
           <img
@@ -117,7 +118,7 @@
       </article>
     </section>
 
-   <div  class="contaner skills">
+   <div  class="contaner skills" >
         <h1 class="title">Tech <span class="highlight">Stack</span></h1>
         
         <div class="skills-strip">
@@ -142,8 +143,9 @@
         </div>
     </div>
 
+</div>
 
-
+<section id="projects">
     <main class="projects contaner">
       <h1 class="title">My <span class="highlight">Projects</span></h1>
 
@@ -286,6 +288,7 @@
         </section>
       </article>
     </main>
+    </section>
 
     <section class="contact contaner" id="contact">
       <section class="contact-header">
@@ -300,7 +303,8 @@
         />
       </section>
 
-      <form class="contact-form">
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="64e971c0-b809-4f9e-9a71-31ddfee599b8" />
         <div class="user-info">
           <div>
             <label for="name">Name </label>
@@ -310,12 +314,16 @@
               placeholder="Your Name"
               required
               autocomplete="name"
+              name="name"
+             pattern="[A-Za-z\s]+"
+              title="Please enter a valid name using letters and spaces only."
             />
 
           </div>
           <div>
             <label for="email">Email</label>
             <input
+              name="email"
               type="email"
               id="email"
               placeholder="Your Email"
@@ -333,6 +341,7 @@
           placeholder="Your Message"
           required
           rows="12"
+          name="message"
         ></textarea>
         <button type="submit" class="btn">
           Send Message
@@ -451,6 +460,40 @@ document.addEventListener('click', function(event) {
     closeMenu();
   }
 });
+
+
+// Function to update active nav link based on scroll position
+function updateActiveLink() {
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks = document.querySelectorAll('.nav-content a');
+  
+  let currentSection = '';
+  
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100; 
+    const sectionHeight = section.offsetHeight;
+    
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      currentSection = section.getAttribute('id');
+    }
+  });
+  
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    
+    const href = link.getAttribute('href');
+    if (href === `#${currentSection}` || (href === '#' && currentSection === '')) {
+      link.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', updateActiveLink);
+document.addEventListener('DOMContentLoaded', updateActiveLink);
+
+
+
+
 
 </script>
   </body>
