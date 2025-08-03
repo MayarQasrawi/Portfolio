@@ -3,27 +3,23 @@
 This project is part of the **HTML & CSS Task**, where I was asked to design and implement my own personal portfolio website.
 The main goal of this portfolio is to present myself as a web developer by showcasing my projects, technical skills, and providing an easy way to get in touch with me.
 
----
 
 ## 🎨 Figma Wireframe Design
 
 Before development, I created a basic wireframe using Figma, based on best practices and clean layout principles.
 📐 **[View My Figma Design →](https://www.figma.com/design/1ex2veDRFdhYpiAv30cFA9/Mayar-Qasarwa-Portfolio?node-id=0-1&p=f&t=mYjf2Hf0bqhgyMzq-0)**
 
----
 
 ## 🚀 Live Demo
 
 🔗 **[View Live Portfolio →](https://mayarqasrawi.github.io/Portfolio)**
 
----
 
 ## 📚 What is a Portfolio?
 
 A developer portfolio is a personal website with the sole purpose of **selling yourself as a developer**.
 It highlights your **projects**, **skills**, and includes a **contact section** to allow others (recruiters, collaborators, etc.) to reach out.
 
----
 
 ## 🔍 Research & Approach
 
@@ -35,7 +31,6 @@ It highlights your **projects**, **skills**, and includes a **contact section** 
   * [Matt Farley](https://mattfarley.ca/)
 * My goal was to build a **simple, clean, accessible, and fully responsive** layout following modern best practices.
 
----
 
 ## ✏️ Design & Implementation Highlights
 
@@ -45,7 +40,7 @@ It highlights your **projects**, **skills**, and includes a **contact section** 
 * Implemented a working contact form using [**W3Form**](https://w3forms.com/) – no backend needed.
 * Focused on a **mobile-first** and **responsive layout** using media queries and flexible units.
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -53,13 +48,12 @@ It highlights your **projects**, **skills**, and includes a **contact section** 
 * **CSS3** – Responsive styling, custom variables, scroll behavior
 * **W3Form** – Form handling service for contact submissions
 
----
 
 ## 📱 Responsiveness
 
 The design adapts smoothly to all screen sizes (mobile, tablet, desktop), using a flexible layout and media queries to ensure readability and accessibility on any device.
 
----
+
 
 ## 📩 Contact Me
 
