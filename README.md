@@ -6,7 +6,6 @@ The main goal of this portfolio is to present myself as a web developer by showc
 
 ## 🎨 Figma Wireframe Design
 
-Before development, I created a basic wireframe using Figma, based on best practices and clean layout principles.
 📐 **[View My Figma Design →](https://www.figma.com/design/1ex2veDRFdhYpiAv30cFA9/Mayar-Qasarwa-Portfolio?node-id=0-1&p=f&t=mYjf2Hf0bqhgyMzq-0)**
 
 
